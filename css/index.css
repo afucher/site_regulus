@@ -1,0 +1,24 @@
+ul{ 
+	list-style: none;
+	background-color: #000080;
+	font-family: Verdana;
+	color: #FFF;
+	margin-left: 0px;
+}
+ul li{
+	text-align: center;
+	margin: 5px;
+}
+li a{
+	color: #FFF;
+}
+body{
+	width: 100%;
+	background-color: #000080;
+}
+header h1{
+	text-align: center;
+	height: 40px;
+	margin-top: 10px;
+	background-color: #FFF;
+}
