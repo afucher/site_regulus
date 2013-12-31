@@ -22,3 +22,29 @@ header h1{
 	margin-top: 10px;
 	background-color: #FFF;
 }
+
+div.content{
+	width: 96%;
+	background-color: #FFF;
+	margin: 0 auto 0 auto;
+}
+
+section h2{
+	font-family: Tahoma;
+	font-size: 2em;
+	color: orange;
+}
+
+section h3, section p{
+	font-family: Verdana;
+	font-size: 1.5em;
+	color: #000080;	
+}
+
+section h3{
+	font-weight: bold;
+}
+
+section h2:before{
+	content: ".: ";
+}
