@@ -58,3 +58,18 @@ font-family: RegulusFont;
 	src: url('../font/clrndnh.ttf');
 }
 
+article{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+article > :not(h2) {
+	margin-left: 10px;
+}
+
+article > p{
+	margin-left: 15px;
+}
+article > p.autor{
+	font-style: italic;	
+}
