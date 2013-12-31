@@ -18,9 +18,12 @@ body{
 }
 header h1{
 	text-align: center;
-	height: 40px;
+	min-height: 40px;
 	margin-top: 10px;
 	background-color: #FFF;
+	font-family: RegulusFont;
+	font-size: 3em;
+	padding-bottom: 10px;
 }
 
 div.content{
@@ -48,3 +51,10 @@ section h3{
 section h2:before{
 	content: ".: ";
 }
+
+@font-face
+{
+font-family: RegulusFont;
+	src: url('../font/clrndnh.ttf');
+}
+
