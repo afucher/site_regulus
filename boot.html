@@ -48,7 +48,7 @@
   <accordion close-others="oneAtATime">
     <accordion-group ng-repeat="curso in cursos">
       <accordion-heading>
-        <h2>{{curso.title}}:</h2><h3>{{curso.subtitle}}</h3> 
+        <h2>{{curso.title}}:</h2><h3 ng-show="curso.subtitle != ''">{{curso.subtitle}}</h3> 
       </accordion-heading>
       {{curso.description}}
     </accordion-group>
@@ -56,8 +56,8 @@
 </div>
 
 		
-  <!--	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
- Latest compiled and minified JavaScript 
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <!-- Latest compiled and minified JavaScript -->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 </body>
 </html>

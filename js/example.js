@@ -1,6 +1,6 @@
 angular.module('regulus', ['ui.bootstrap']);
 function AccordionDemoCtrl($scope) {
-  $scope.oneAtATime = true;
+  $scope.oneAtATime = false;
 
   $scope.groups = [
     {
@@ -25,13 +25,11 @@ function AccordionDemoCtrl($scope) {
       subtitle: "Sub-titulo",
       author: "Autor",
       description: "Uma breve descrição do que é!"
+    },
+    {
+      title: "Titulo",
+      author: "Autor",
+      description: "Uma breve descrição do que é!"
     }
   ];
-
-  $scope.items = ['Item 1', 'Item 2', 'Item 3'];
-
-  $scope.addItem = function() {
-    var newItemNo = $scope.items.length + 1;
-    $scope.items.push('Item ' + newItemNo);
-  };
 }
