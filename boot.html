@@ -44,6 +44,12 @@
 	  </div><!-- /.container-fluid -->
 	</nav>
 <div ng-controller="AccordionDemoCtrl">
+    <div class="jumbotron" ng-show="destaque != undefined">
+        <h1>{{destaque.title}}</h1>
+        <p>{{destaque.description}}</p>
+        <p ng-show="destaque.button != undefined"><a class="btn btn-primary btn-lg" role="button" href={{destaque.button.link}}>{{destaque.button.title}}</a></p>
+    </div>
+
 
   <accordion close-others="oneAtATime">
     <accordion-group ng-repeat="curso in cursos">
