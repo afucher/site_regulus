@@ -1,0 +1,24 @@
+{
+  "name": "site_regulus",
+  "version": "0.0.1",
+  "homepage": "https://github.com/afucher/site_regulus",
+  "authors": [
+    "afucher <arthurfucher@gmail.com>"
+  ],
+  "description": "Site da Regulus",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.2.15",
+    "angular-scroll": "~0.2.9",
+    "angular-strap": "~0.7.8",
+    "angular": "~1.2.15"
+  }
+}
