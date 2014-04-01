@@ -25,7 +25,7 @@ regulusApp.config(function ($routeProvider) {
             controller  : 'contactController'
         });
 });
-regulusApp.config(function($locationProvider) {
+/*regulusApp.config(function($locationProvider) {
     $locationProvider.html5Mode(false);
   }).
   run(function($rootScope, $location){
@@ -39,7 +39,7 @@ regulusApp.config(function($locationProvider) {
             $element.parent().removeClass("active");
         }       
     });
-  });
+  });*/
 
 
 
@@ -50,11 +50,11 @@ regulusApp.controller('mainController', function ($scope) {
     $scope.message = "Hello World";
     $scope.oneAtATime = false;
     $scope.destaque = {
-        title: "50% de desconto em livros",
-        description: "Venha ver os livros que estão com desconto!",
+        title: "Pensando em estudar astrologia?",
+        description: "Confira nossos cursos...",
         button: {
-            title: "Saber mais...",
-            link: "/livraria.html"
+            title: "Cursos...",
+            link: "#/cursos"
         }
     };
     $scope.cursos = [
