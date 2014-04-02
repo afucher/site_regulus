@@ -75,14 +75,6 @@ regulusApp.controller('mainController', function ($scope) {
 regulusApp.controller('cursosController', function ($scope) {
     // create a message to display in our view
     'use strict';
-    $scope.queryFilter = function(curso) {
-      if($scope.query != null) {
-        console.log(curso)
-        return curso.title.toLowerCase().indexOf($scope.query.toLowerCase()) != -1
-       || curso.author.toLowerCase().indexOf($scope.query.toLowerCase()) != -1;
-      }
-      return true;
-    };
     $scope.cursos = [
         {
             id:"1",

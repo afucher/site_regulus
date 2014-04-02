@@ -23,7 +23,7 @@
       <span id="searchclear" class="glyphicon glyphicon-remove-circle"></span>
     </div>
     <ul class=" nav nav-pills nav-stacked">
-        <li ng-repeat="curso in cursos | filter:queryfilter" du-scrollspy="section-{{$curso.id}}"><a href="#section-{{$curso.id}}" du-smooth-scroll>{{curso.title}}</a></li>
+        <li ng-repeat="curso in cursos | filter:search" du-scrollspy="section-{{curso.id}}"><a href="#section-{{curso.id}}" du-smooth-scroll>{{curso.title}}</a></li>
       <!--<li du-scrollspy="section-1"><a href="#section-1" du-smooth-scroll >Princípios e Fundamentos da Astrologia</a></li>
       <li du-scrollspy="section-2"><a href="#section-2" du-smooth-scroll>Regentes e Dispositores</a></li>
       <li du-scrollspy="section-3"><a href="#section-3" du-smooth-scroll >Astrologia da Saúde</a></li>
@@ -34,7 +34,7 @@
 </div>
 <div class="col-md-8">
   <h1>Programação de cursos</h1>
-    <section id="section-{{$curso.id}}" ng-repeat="curso in cursos">
+    <section id="section-{{curso.id}}" ng-repeat="curso in cursos">
       <h2>{{curso.title}}</h2>
       <p>{{curso.description}}</p>
       <table class="table">
