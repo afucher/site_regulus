@@ -25,22 +25,6 @@ regulusApp.config(function ($routeProvider) {
             controller  : 'contactController'
         });
 });
-/*regulusApp.config(function($locationProvider) {
-    $locationProvider.html5Mode(false);
-  }).
-  run(function($rootScope, $location){
-    $rootScope.$on('duScrollspy:becameActive', function($event, $element){
-        if($element.parent()[0].tagName == "LI"){
-            $element.parent().addClass("active");
-        }       
-    });
-    $rootScope.$on('duScrollspy:becameInactive', function($event, $element){
-        if($element.parent()[0].tagName == "LI"){
-            $element.parent().removeClass("active");
-        }       
-    });
-  });*/
-
 
 
 // create the controller and inject Angular's $scope
