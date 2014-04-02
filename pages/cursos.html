@@ -1,18 +1,56 @@
+<style>
+  #searchinput {
+    width: 200px;
+}
+#searchclear {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ccc;
+}
+</style>
+
 <row>
 <div class="col-md-4 hidden-xs hidden-md">
 <nav class="affix">
+    <div class="btn-group">
+      <input type="search" ng-model="search.title" class="search-query form-control" placeholder="Search">
+      <span id="searchclear" class="glyphicon glyphicon-remove-circle"></span>
+    </div>
     <ul class=" nav nav-pills nav-stacked">
-      <li du-scrollspy="section-1"><a href="#section-1" du-smooth-scroll >Princípios e Fundamentos da Astrologia</a></li>
+        <li ng-repeat="curso in cursos | filter:queryfilter" du-scrollspy="section-{{$curso.id}}"><a href="#section-{{$curso.id}}" du-smooth-scroll>{{curso.title}}</a></li>
+      <!--<li du-scrollspy="section-1"><a href="#section-1" du-smooth-scroll >Princípios e Fundamentos da Astrologia</a></li>
       <li du-scrollspy="section-2"><a href="#section-2" du-smooth-scroll>Regentes e Dispositores</a></li>
       <li du-scrollspy="section-3"><a href="#section-3" du-smooth-scroll >Astrologia da Saúde</a></li>
       <li du-scrollspy="section-4"><a href="#section-4" du-smooth-scroll >Desconstruindo Saturno</a></li>
-      <li du-scrollspy="section-5"><a href="#section-5" du-smooth-scroll >A Arte da Síntese</a></li>
+      <li du-scrollspy="section-5"><a href="#section-5" du-smooth-scroll >A Arte da Síntese</a></li>-->
     </ul>
   </nav>
 </div>
 <div class="col-md-8">
   <h1>Programação de cursos</h1>
-  <section id="section-1">
+    <section id="section-{{$curso.id}}" ng-repeat="curso in cursos">
+      <h2>{{curso.title}}</h2>
+      <p>{{curso.description}}</p>
+      <table class="table">
+        <tbody ng-repeat="class in curso.classes">
+          <tr>
+            <td>{{class.startDay}}</td>
+            <td>{{class.duration}}</td>
+            <td>{{class.frequency}}</td>
+            <td>{{class.schedule}}</td>
+            <td>{{class.professor}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  <!--<section id="section-1">
     <h2>Princípios e Fundamentos da Astrologia</h2>
     <p>Módulo inicial destinado à quem não tem conhecimentos em astrologia, são passadas as bases da Astrologia: princípios, significado de planetas, signos, casas e aspectos.</p>
       <table class="table">
@@ -112,6 +150,6 @@ Programa: Saturno nas Casas / Distúrbios de alimentação / Distúrbios emocion
               </tr>
           </tbody>
       </table>
-  </section>
+  </section>-->
   </div>
     </row>

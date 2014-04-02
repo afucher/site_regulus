@@ -10,7 +10,8 @@ regulusApp.config(function ($routeProvider) {
         })
         // route for the about page
         .when('/cursos', {
-            templateUrl : 'pages/cursos.html'
+            templateUrl : 'pages/cursos.html',
+            controller : 'cursosController'
         })
 
         // route for the about page
@@ -31,7 +32,6 @@ regulusApp.config(function ($routeProvider) {
 regulusApp.controller('mainController', function ($scope) {
     // create a message to display in our view
     'use strict';
-    $scope.message = "Hello World";
     $scope.oneAtATime = false;
     $scope.destaque = {
         title: "Pensando em estudar astrologia?",
@@ -68,6 +68,119 @@ regulusApp.controller('mainController', function ($scope) {
             title: "Titulo",
             author: "Autor",
             description: "Uma breve descrição do que é!"
+        }
+    ];
+});
+
+regulusApp.controller('cursosController', function ($scope) {
+    // create a message to display in our view
+    'use strict';
+    $scope.queryFilter = function(curso) {
+      if($scope.query != null) {
+        console.log(curso)
+        return curso.title.toLowerCase().indexOf($scope.query.toLowerCase()) != -1
+       || curso.author.toLowerCase().indexOf($scope.query.toLowerCase()) != -1;
+      }
+      return true;
+    };
+    $scope.cursos = [
+        {
+            id:"1",
+            title: "Princípios e Fundamentos da Astrologia",
+            author: "Patrícia Valente",
+            description: "Módulo inicial destinado à quem não tem conhecimentos em astrologia, são passadas as bases da Astrologia: princípios, significado de planetas, signos, casas e aspectos.",
+            classes: [{startDay : "07/03 (sextas)",
+                       duration : "4 meses",
+                       frequency : "1 aula por semana",
+                       schedule : "tarde (14h30 às 16h30)",
+                       professor : "Profª. Nina M.F. Alves"
+                  },{startDay : "11/03 (terças)",
+                       duration : "4 meses",
+                       frequency : "1 aula por semana",
+                       schedule : "noite (20h00 às 22h00)",
+                       professor : "Prof. Elmer Baumgratz"
+                  },{startDay : "15/03 (sábados)",
+                       duration : "4 meses",
+                       frequency : "2 aulas por mês de 4 horas (aulas quinzenais)",
+                       schedule : "manhã (10h00 às 14h00)",
+                       professor : "Prof. Elmer Baumgratz"
+                  },{startDay : "22/03 (sábados)",
+                       duration : "4 meses",
+                       frequency : "2 aulas por mês de 4 horas (aulas quinzenais)",
+                       schedule : "tarde (14h00 às 18h00)",
+                       professor : "Profª. Nina M.F. Alves"
+                  }
+
+            ]
+        },
+        {
+            id:"2",
+            title: "Regentes e Dispositores",
+            author: "Patrícia Valente",
+            description: "Módulo inicial destinado à quem não tem conhecimentos em astrologia, são passadas as bases da Astrologia: princípios, significado de planetas, signos, casas e aspectos.",
+            classes: [{startDay : "07/03 (sextas)",
+                       duration : "4 meses",
+                       frequency : "1 aula por semana",
+                       schedule : "tarde (14h30 às 16h30)",
+                       professor : "Profª. Nina M.F. Alves"
+                  }
+            ]
+        },{
+            id:"3",
+            title: "Princípios e Fundamentos da Astrologia",
+            author: "Patrícia Valente",
+            description: "Módulo inicial destinado à quem não tem conhecimentos em astrologia, são passadas as bases da Astrologia: princípios, significado de planetas, signos, casas e aspectos.",
+            classes: [{startDay : "07/03 (sextas)",
+                       duration : "4 meses",
+                       frequency : "1 aula por semana",
+                       schedule : "tarde (14h30 às 16h30)",
+                       professor : "Profª. Nina M.F. Alves"
+                  },{startDay : "11/03 (terças)",
+                       duration : "4 meses",
+                       frequency : "1 aula por semana",
+                       schedule : "noite (20h00 às 22h00)",
+                       professor : "Prof. Elmer Baumgratz"
+                  },{startDay : "15/03 (sábados)",
+                       duration : "4 meses",
+                       frequency : "2 aulas por mês de 4 horas (aulas quinzenais)",
+                       schedule : "manhã (10h00 às 14h00)",
+                       professor : "Prof. Elmer Baumgratz"
+                  },{startDay : "22/03 (sábados)",
+                       duration : "4 meses",
+                       frequency : "2 aulas por mês de 4 horas (aulas quinzenais)",
+                       schedule : "tarde (14h00 às 18h00)",
+                       professor : "Profª. Nina M.F. Alves"
+                  }
+
+            ]
+        },{
+            id:"4",
+            title: "Princípios e Fundamentos da Astrologia",
+            author: "Patrícia Valente",
+            description: "Módulo inicial destinado à quem não tem conhecimentos em astrologia, são passadas as bases da Astrologia: princípios, significado de planetas, signos, casas e aspectos.",
+            classes: [{startDay : "07/03 (sextas)",
+                       duration : "4 meses",
+                       frequency : "1 aula por semana",
+                       schedule : "tarde (14h30 às 16h30)",
+                       professor : "Profª. Nina M.F. Alves"
+                  },{startDay : "11/03 (terças)",
+                       duration : "4 meses",
+                       frequency : "1 aula por semana",
+                       schedule : "noite (20h00 às 22h00)",
+                       professor : "Prof. Elmer Baumgratz"
+                  },{startDay : "15/03 (sábados)",
+                       duration : "4 meses",
+                       frequency : "2 aulas por mês de 4 horas (aulas quinzenais)",
+                       schedule : "manhã (10h00 às 14h00)",
+                       professor : "Prof. Elmer Baumgratz"
+                  },{startDay : "22/03 (sábados)",
+                       duration : "4 meses",
+                       frequency : "2 aulas por mês de 4 horas (aulas quinzenais)",
+                       schedule : "tarde (14h00 às 18h00)",
+                       professor : "Profª. Nina M.F. Alves"
+                  }
+
+            ]
         }
     ];
 });
