@@ -72,109 +72,13 @@ regulusApp.controller('mainController', function ($scope) {
     ];
 });
 
-regulusApp.controller('cursosController', function ($scope) {
+regulusApp.controller('cursosController', function ($scope, $http) {
     // create a message to display in our view
     'use strict';
-    $scope.cursos = [
-        {
-            id:"1",
-            title: "Princípios e Fundamentos da Astrologia",
-            author: "Patrícia Valente",
-            description: "Módulo inicial destinado à quem não tem conhecimentos em astrologia, são passadas as bases da Astrologia: princípios, significado de planetas, signos, casas e aspectos.",
-            classes: [{startDay : "07/03 (sextas)",
-                       duration : "4 meses",
-                       frequency : "1 aula por semana",
-                       schedule : "tarde (14h30 às 16h30)",
-                       professor : "Profª. Nina M.F. Alves"
-                  },{startDay : "11/03 (terças)",
-                       duration : "4 meses",
-                       frequency : "1 aula por semana",
-                       schedule : "noite (20h00 às 22h00)",
-                       professor : "Prof. Elmer Baumgratz"
-                  },{startDay : "15/03 (sábados)",
-                       duration : "4 meses",
-                       frequency : "2 aulas por mês de 4 horas (aulas quinzenais)",
-                       schedule : "manhã (10h00 às 14h00)",
-                       professor : "Prof. Elmer Baumgratz"
-                  },{startDay : "22/03 (sábados)",
-                       duration : "4 meses",
-                       frequency : "2 aulas por mês de 4 horas (aulas quinzenais)",
-                       schedule : "tarde (14h00 às 18h00)",
-                       professor : "Profª. Nina M.F. Alves"
-                  }
-
-            ]
-        },
-        {
-            id:"2",
-            title: "Regentes e Dispositores",
-            author: "Patrícia Valente",
-            description: "Módulo inicial destinado à quem não tem conhecimentos em astrologia, são passadas as bases da Astrologia: princípios, significado de planetas, signos, casas e aspectos.",
-            classes: [{startDay : "07/03 (sextas)",
-                       duration : "4 meses",
-                       frequency : "1 aula por semana",
-                       schedule : "tarde (14h30 às 16h30)",
-                       professor : "Profª. Nina M.F. Alves"
-                  }
-            ]
-        },{
-            id:"3",
-            title: "Princípios e Fundamentos da Astrologia",
-            author: "Patrícia Valente",
-            description: "Módulo inicial destinado à quem não tem conhecimentos em astrologia, são passadas as bases da Astrologia: princípios, significado de planetas, signos, casas e aspectos.",
-            classes: [{startDay : "07/03 (sextas)",
-                       duration : "4 meses",
-                       frequency : "1 aula por semana",
-                       schedule : "tarde (14h30 às 16h30)",
-                       professor : "Profª. Nina M.F. Alves"
-                  },{startDay : "11/03 (terças)",
-                       duration : "4 meses",
-                       frequency : "1 aula por semana",
-                       schedule : "noite (20h00 às 22h00)",
-                       professor : "Prof. Elmer Baumgratz"
-                  },{startDay : "15/03 (sábados)",
-                       duration : "4 meses",
-                       frequency : "2 aulas por mês de 4 horas (aulas quinzenais)",
-                       schedule : "manhã (10h00 às 14h00)",
-                       professor : "Prof. Elmer Baumgratz"
-                  },{startDay : "22/03 (sábados)",
-                       duration : "4 meses",
-                       frequency : "2 aulas por mês de 4 horas (aulas quinzenais)",
-                       schedule : "tarde (14h00 às 18h00)",
-                       professor : "Profª. Nina M.F. Alves"
-                  }
-
-            ]
-        },{
-            id:"4",
-            title: "Princípios e Fundamentos da Astrologia",
-            author: "Patrícia Valente",
-            description: "Módulo inicial destinado à quem não tem conhecimentos em astrologia, são passadas as bases da Astrologia: princípios, significado de planetas, signos, casas e aspectos.",
-            classes: [{startDay : "07/03 (sextas)",
-                       duration : "4 meses",
-                       frequency : "1 aula por semana",
-                       schedule : "tarde (14h30 às 16h30)",
-                       professor : "Profª. Nina M.F. Alves"
-                  },{startDay : "11/03 (terças)",
-                       duration : "4 meses",
-                       frequency : "1 aula por semana",
-                       schedule : "noite (20h00 às 22h00)",
-                       professor : "Prof. Elmer Baumgratz"
-                  },{startDay : "15/03 (sábados)",
-                       duration : "4 meses",
-                       frequency : "2 aulas por mês de 4 horas (aulas quinzenais)",
-                       schedule : "manhã (10h00 às 14h00)",
-                       professor : "Prof. Elmer Baumgratz"
-                  },{startDay : "22/03 (sábados)",
-                       duration : "4 meses",
-                       frequency : "2 aulas por mês de 4 horas (aulas quinzenais)",
-                       schedule : "tarde (14h00 às 18h00)",
-                       professor : "Profª. Nina M.F. Alves"
-                  }
-
-            ]
-        }
-    ];
+    $scope.cursos = {};
+    $http.get('json/cursos.json').success(function(data) {
+        $scope.cursos = data;
+    });
 });
 
 regulusApp.controller('aboutController', function ($scope) {

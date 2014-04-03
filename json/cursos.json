@@ -1,0 +1,81 @@
+[
+        {
+            "id":"1",
+            "title": "Princípios e Fundamentos da Astrologia",
+            "description": "Módulo inicial destinado à quem não tem conhecimentos em astrologia, são passadas as bases da Astrologia: princípios, significado de planetas, signos, casas e aspectos.",
+            "classes": [{"startDay" : "07/03 (sextas)",
+                       "duration" : "4 meses",
+                       "frequency" : "1 aula por semana",
+                       "schedule" : "tarde (14h30 às 16h30)",
+                       "professor" : "Profª. Nina M.F. Alves"
+                  },{"startDay" : "11/03 (terças)",
+                       "duration" : "4 meses",
+                       "frequency" : "1 aula por semana",
+                       "schedule" : "noite (20h00 às 22h00)",
+                       "professor" : "Prof. Elmer Baumgratz"
+                  },{"startDay" : "15/03 (sábados)",
+                       "duration" : "4 meses",
+                       "frequency" : "2 aulas por mês de 4 horas (aulas quinzenais)",
+                       "schedule" : "manhã (10h00 às 14h00)",
+                       "professor" : "Prof. Elmer Baumgratz"
+                  },{"startDay" : "22/03 (sábados)",
+                       "duration" : "4 meses",
+                       "frequency" : "2 aulas por mês de 4 horas (aulas quinzenais)",
+                       "schedule" : "tarde (14h00 às 18h00)",
+                       "professor" : "Profª. Nina M.F. Alves"
+                  }
+
+            ]
+        },
+        {
+            "id":"2",
+            "title": "Regentes e Dispositores",
+            "description": "Módulo inicial destinado à quem não tem conhecimentos em astrologia, são passadas as bases da Astrologia: princípios, significado de planetas, signos, casas e aspectos.",
+            "classes": [{"startDay" : "07/03 (sextas)",
+                       "duration" : "4 meses",
+                       "frequency" : "1 aula por semana",
+                       "schedule" : "tarde (14h30 às 16h30)",
+                       "professor" : "Profª. Nina M.F. Alves"
+                  }
+            ]
+        },{
+            "id":"3",
+            "title": "Astrologia da Saúde",
+            "description": "Astrologia da Saúde traz uma conscientização das tendências individuais em questões de saúde, analisando as correspondências astrológicas com as predisposições às enfermidades, sugerindo terapias alternativas, hábitos e dietas individuais mais adequados, em função do Mapa Astrológico Natal. É importante resaltar que o Astrólogo investiga e identifica as influências astrológicas na resistência física e psíquica; as doenças e sua relações com os aspectos planetários. Qualquer diagóstico e tratamento deverá ser estabelecido por um profissional da área médica e de saúde.",
+            "classes": [{"startDay" : "07/04 (segundas)",
+                       "duration" : "6 meses",
+                       "frequency" : "1 aula por semana",
+                       "schedule" : "tarde (14h30 às 16h30)",
+                       "professor" : "Profª Sandra Giannoni"
+                  }
+
+            ]
+        },{
+            "id":"4",
+            "title": "Princípios e Fundamentos da Astrologia",
+            "description": "Módulo inicial destinado à quem não tem conhecimentos em astrologia, são passadas as bases da Astrologia: princípios, significado de planetas, signos, casas e aspectos.",
+            "classes": [{"startDay" : "07/03 (sextas)",
+                       "duration" : "4 meses",
+                       "frequency" : "1 aula por semana",
+                       "schedule" : "tarde (14h30 às 16h30)",
+                       "professor" : "Profª. Nina M.F. Alves"
+                  },{"startDay" : "11/03 (terças)",
+                       "duration" : "4 meses",
+                       "frequency" : "1 aula por semana",
+                       "schedule" : "noite (20h00 às 22h00)",
+                       "professor" : "Prof. Elmer Baumgratz"
+                  },{"startDay" : "15/03 (sábados)",
+                       "duration" : "4 meses",
+                       "frequency" : "2 aulas por mês de 4 horas (aulas quinzenais)",
+                       "schedule" : "manhã (10h00 às 14h00)",
+                       "professor" : "Prof. Elmer Baumgratz"
+                  },{"startDay" : "22/03 (sábados)",
+                       "duration" : "4 meses",
+                       "frequency" : "2 aulas por mês de 4 horas (aulas quinzenais)",
+                       "schedule" : "tarde (14h00 às 18h00)",
+                       "professor" : "Profª. Nina M.F. Alves"
+                  }
+
+            ]
+        }
+]

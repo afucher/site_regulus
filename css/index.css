@@ -1,75 +1,14 @@
-ul{ 
-	list-style: none;
-	background-color: #000080;
-	font-family: Verdana;
-	color: #FFF;
-	margin-left: 0px;
+#searchinput {
+    width: 200px;
 }
-ul li{
-	text-align: center;
-	margin: 5px;
-}
-li a{
-	color: #FFF;
-}
-body{
-	width: 100%;
-	background-color: #000080;
-}
-header h1{
-	text-align: center;
-	min-height: 40px;
-	margin-top: 10px;
-	background-color: #FFF;
-	font-family: RegulusFont;
-	font-size: 3em;
-	padding-bottom: 10px;
-}
-
-div.content{
-	width: 96%;
-	background-color: #FFF;
-	margin: 0 auto 0 auto;
-}
-
-section h2{
-	font-family: Tahoma;
-	font-size: 2em;
-	color: orange;
-}
-
-section h3, section p{
-	font-family: Verdana;
-	font-size: 1.5em;
-	color: #000080;	
-}
-
-section h3{
-	font-weight: bold;
-}
-
-section h2:before{
-	content: ".: ";
-}
-
-@font-face
-{
-font-family: RegulusFont;
-	src: url('../font/clrndnh.ttf');
-}
-
-article{
-    padding-top:10px;
-    padding-bottom: 10px;
-}
-
-article > :not(h2) {
-	margin-left: 10px;
-}
-
-article > p{
-	margin-left: 15px;
-}
-article > p.autor{
-	font-style: italic;	
+#searchclear {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ccc;
 }
