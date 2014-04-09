@@ -1,4 +1,4 @@
-var regulusApp = angular.module('regulusApp', [ 'ngRoute', 'duScroll']);
+var regulusApp = angular.module('regulusApp', [ 'ngRoute', 'duScroll','ui.bootstrap']);
 
 regulusApp.config(function ($routeProvider) {
     'use strict';
@@ -24,6 +24,10 @@ regulusApp.config(function ($routeProvider) {
         .when('/programas', {
             templateUrl : 'pages/software.html',
             controller  : 'contactController'
+        })
+        .otherwise({
+            templateUrl : 'pages/home.html',
+            controller  : 'mainController'
         });
 });
 

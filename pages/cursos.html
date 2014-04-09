@@ -20,17 +20,19 @@
     <section id="section-{{curso.id}}" ng-repeat="curso in cursos | filter:search">
       <h2>{{curso.title}}</h2>
       <p>{{curso.description}}</p>
-      <table class="table">
-        <tbody ng-repeat="class in curso.classes">
-          <tr>
-            <td>{{class.startDay}}</td>
-            <td>{{class.duration}}</td>
-            <td>{{class.frequency}}</td>
-            <td>{{class.schedule}}</td>
-            <td>{{class.professor}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table">
+          <tbody ng-repeat="class in curso.classes">
+            <tr>
+              <td>{{class.startDay}}</td>
+              <td>{{class.duration}}</td>
+              <td class="hidden-phone">{{class.frequency}}</td>
+              <td>{{class.schedule}}</td>
+              <td>{{class.professor}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
   <!--<section id="section-1">

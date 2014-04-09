@@ -52,30 +52,26 @@
             ]
         },{
             "id":"4",
-            "title": "Princípios e Fundamentos da Astrologia",
-            "description": "Módulo inicial destinado à quem não tem conhecimentos em astrologia, são passadas as bases da Astrologia: princípios, significado de planetas, signos, casas e aspectos.",
-            "classes": [{"startDay" : "07/03 (sextas)",
-                       "duration" : "4 meses",
+            "title": "Desconstruindo Saturno",
+            "description": "O Grande Maléfico, último planeta visível a olho nu, é sentido, literalmente, na pele, através de problemas físicos e psíquicos. Distúrbios alimentares, depressões e inseguranças, excesso de responsabilidade e síndromes são acionadas por ele. Os obstáculos serão identificados e fornecidas as ferramentas para lidar com as dificuldades. Programa: Saturno nas Casas / Distúrbios de alimentação / Distúrbios emocionais / Ciclos e respectivas crises / Reconstruindo Saturno: ferramentas úteis.",
+            "classes": [{"startDay" : "dia 09/04 (quartas)",
+                       "duration" : "1 mes",
                        "frequency" : "1 aula por semana",
                        "schedule" : "tarde (14h30 às 16h30)",
-                       "professor" : "Profª. Nina M.F. Alves"
-                  },{"startDay" : "11/03 (terças)",
-                       "duration" : "4 meses",
-                       "frequency" : "1 aula por semana",
-                       "schedule" : "noite (20h00 às 22h00)",
-                       "professor" : "Prof. Elmer Baumgratz"
-                  },{"startDay" : "15/03 (sábados)",
-                       "duration" : "4 meses",
-                       "frequency" : "2 aulas por mês de 4 horas (aulas quinzenais)",
-                       "schedule" : "manhã (10h00 às 14h00)",
-                       "professor" : "Prof. Elmer Baumgratz"
-                  },{"startDay" : "22/03 (sábados)",
-                       "duration" : "4 meses",
-                       "frequency" : "2 aulas por mês de 4 horas (aulas quinzenais)",
-                       "schedule" : "tarde (14h00 às 18h00)",
-                       "professor" : "Profª. Nina M.F. Alves"
+                       "professor" : "Profª.Elizabeth Nakata"
                   }
-
+            ]
+        },{
+            "id":"5",
+            "title": "A Arte da Síntese",
+            "subtitle":"interpretação de mapas natais",
+            "description": "Uma das principais dificuldades do estudante de Astrologia é organizar as informações para obter a síntese e elaborar a interpretação do Mapa Natal. Desenvolvido a partir de diagramas simples, este curso ensina como descrever sobre diversos temas específicos de maneira precisa e objetiva, à luz do saber astrológico.",
+            "classes": [{"startDay" : "dia 09/04 (quartas)",
+                       "duration" : "2 meses",
+                       "frequency" : "1 aula por semana",
+                       "schedule" : "tarde (14h30 às 16h30)",
+                       "professor" : "Prof. Henrique G. Wiederspahn"
+                  }
             ]
         }
 ]
